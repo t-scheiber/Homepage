@@ -1,0 +1,100 @@
+:root {
+  --bg-color: rgb(20, 20, 20);
+}
+body {
+  font-family: "Open Sans";
+  color: white;
+  align-items: center;
+  background-color: var(--bg-color);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+}
+.container {
+  margin: 0 10% 0 10%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1000px;
+}
+.tile {
+  width: 400px;
+  height: 240px;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+#photography,
+#social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 400px;
+  height: 240px;
+}
+#text:hover .field:not(:hover) {
+  opacity: 0.2;
+}
+a:link,
+a:visited,
+a:active {
+  color: white;
+  text-decoration: none;
+  font-size: 22pt;
+}
+.half {
+  width: 190px;
+  height: 240px;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1em;
+  font-size: 20pt;
+}
+.quarter {
+  width: 190px;
+  height: 110px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1em;
+  font-size: 16pt;
+}
+#photography {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#cvImage {
+  border-radius: 50%;
+
+}
+img{
+    max-width: 240px;
+    max-height: 150px;
+    margin: 0px auto 0px auto;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+}
+p{
+    margin: 0px;
+}
+.half > img{
+    width: 80px;
+    height: 80px;
+}
+.quarter > img{
+    width: 50px;
+    height: 50px;
+}
+.tile img:last-child() {
+    width: 30px;
+    height: 30px;
+}
